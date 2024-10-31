@@ -43,9 +43,7 @@ Cada una de estas entidades puede tener permisos específicos asociados, tanto a
 
 ### Entregables
 
-1. **Procedimientos Almacenados:**
-   - Los **procedimientos almacenados** que implementen la lógica de permisos deben ser guardados en la carpeta `scripts_procedimientos_almacenados`.
-   - Estos procedimientos se encargarán de la asignación, revocación y verificación de permisos a usuarios y roles. Incluir todos los procedimientos desarrollados en esta carpeta es esencial.
+**Procedimiento Principal:** Este procedimiento debe recibir dos parámetros: el ID del entitycatal y el ID del usuario. Su propósito es devolver los permisos asignados al usuario, tanto a nivel de entidad como a nivel de registros dentro de la entidad. Los permisos deben seguir una jerarquía lógica que considere las relaciones entre los distintos tipos de permisos: permirole, permiuser, permiuserrecord y permirolerecord. Es fundamental que se analice el problema para establecer una jerarquía coherente entre estos niveles de permisos.
 
 2. **Scripts para Creación de Tablas:**
    - Los **scripts necesarios para la creación de las tablas** deben estar ubicados en la carpeta `scripts_para_crear_tablas`.
