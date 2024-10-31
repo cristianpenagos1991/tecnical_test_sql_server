@@ -45,6 +45,8 @@ Cada una de estas entidades puede tener permisos específicos asociados, tanto a
 
 **Procedimiento Principal:** Este procedimiento debe recibir dos parámetros: el ID del entitycatal y el ID del usuario. Su propósito es devolver los permisos asignados al usuario, tanto a nivel de entidad como a nivel de registros dentro de la entidad. Los permisos deben seguir una jerarquía lógica que considere las relaciones entre los distintos tipos de permisos: permirole, permiuser, permiuserrecord y permirolerecord. Es fundamental que se analice el problema para establecer una jerarquía coherente entre estos niveles de permisos.
 
+**Insert**: generar los insert pertinentes para evidenciar la ejecución de los procedimientos realizados - Consejo: usar claude o chat chatgpt
+
 2. **Scripts para Creación de Tablas:**
    - Los **scripts necesarios para la creación de las tablas** deben estar ubicados en la carpeta `scripts_para_crear_tablas`.
    - Estos scripts deben contener las sentencias `CREATE TABLE` y cualquier otra estructura necesaria para soportar el sistema de permisos.
